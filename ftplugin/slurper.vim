@@ -1,6 +1,6 @@
 " Vim filetype plugin
 " Language:	Slurper
-" Maintainer:	Hashrocket <info@hashrocket.com>
+" Maintainer:	Adam Lowe <contact@adamlowe.me>
 
 " Only do this when not done yet for this buffer
 if exists("b:did_ftplugin")
@@ -10,7 +10,7 @@ let b:did_ftplugin = 1
 
 setlocal spell
 
-nmap <buffer> <C-j> 
+nmap <buffer> <C-k> 
       \<C-\><C-n>
       \o
       \<C-D>name
@@ -31,4 +31,24 @@ nmap <buffer> <C-j>
       \k
       \<S-a>
 
-imap <buffer> <C-j> <C-O><C-j>
+imap <buffer> <C-k> <C-O><C-k>
+
+nmap <buffer> <C-l> 
+      \<C-\><C-n>
+      \o
+      \<C-D>name
+      \<CR>  
+      \<CR><C-D>description
+      \<CR><C-T>In order to
+      \<CR>As a
+      \<CR>I want
+      \<CR>
+      \<CR><C-D>labels
+      \<CR><C-T>
+      \<CR><C-D>==
+      \<Esc>
+      \8
+      \k
+      \<S-a>
+
+imap <buffer> <C-l> <C-O><C-l>
