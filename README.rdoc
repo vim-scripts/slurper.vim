@@ -14,37 +14,59 @@ Alternately my preferred method of installing vim plugins is to use Tim Pope's p
 
 = Usage
 
-CTRL-k generates a new story with acceptance criteria.
+CTRL-h generates a new chore and puts you in insert mode on the name line.
 
   ==
-  name
+  story_type:
+    chore
+  name:
     
-  description
+  description:
+    
+
+  labels:
+
+CTRL-j generates a new feature and puts you in insert mode on the name line.
+
+  ==
+  story_type:
+    feature
+  name:
+    
+  description:
     In order to
     As a
     I want
 
-    -
+    - 
 
-  labels
+  labels:
 
-  ==
-
-CTRL-l generates a new story without acceptance criteria.
+CTRL-k generates a new release and puts you in insert mode on the name line.
 
   ==
-  name
+  story_type:
+    release
+  name:
     
-  description
-    In order to
-    As a
-    I want
+  description:
+    
 
-  labels
+  labels:
+  
+CTRL-l generates a new bug and puts you in insert mode on the name line.
 
   ==
+  story_type:
+    bug
+  name:
+    
+  description:
+    
 
-The macros work the same in insert or edit modes. They intentionally leave off the begining == delimiter. Add the first one at the top of your file and then the trailing == from each previous story acts as the leading delimiter for the following story.
+  labels:
+  
+The macros work the same in insert or edit modes.
 
 = Patches/Pull Requests
 
